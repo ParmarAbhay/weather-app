@@ -3,9 +3,9 @@ const express = require('express')
 const hbs = require('hbs')
 const geocode = require('./geocode')
 const forecast = require('./forecast')
-const { response } = require('express')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 app.use(express.static(path.join(__dirname, '../public/css')))
 app.use(express.static(path.join(__dirname, '../public/imgs')))
@@ -88,6 +88,6 @@ app.get('*', (req, res) => {
     })
 
 })
-app.listen(3000, () => {
-    console.log('you server satrt at 3000 port number')
+app.listen(port, () => {
+    console.log('you server start at ' + port + 'port')
 })
