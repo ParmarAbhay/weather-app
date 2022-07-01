@@ -1,18 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="./style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arima:wght@500&display=swap');
+
+        body {
+            font-family: 'Arima', cursive;
+            color: black;
+            max-width: 700px;
+            margin: 0px auto;
+            border: 3px solid black;
+            padding: 0 16px;
+            display: flex;
+            flex-direction: column;
+            min-height: 99vh;
+        }
+
+        footer {
+            color: #888888;
+            border-top: 1px solid #eeeeee;
+            margin-top: 16px;
+            padding: 16px 0;
+            font-size: 18px;
+        }
+
+        header {
+            margin-top: 16px;
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 64px;
+            margin-bottom: 16px;
+        }
+
+        header a {
+            font-size: 25px;
+            color: #888888;
+            margin-right: 16px;
+            text-decoration: none;
+        }
+
+        .main-contain {
+            flex-grow: 1;
+        }
+
+        p {
+            font-size: 25px;
+        }
+    </style>
     <link rel="icon" href="./weather.png">
 
     <title>Help</title>
 </head>
+
 <body>
     <div class="main-contain">
         {{>header}}
-        <p>This site is used for check weather<br><br>You can also Check weather by Entre zip/pin code or palce/city name <br><br> Thanks For Visit Our WebSite !!!       
-        &#128519; &#128513;&#128513;  </p>
+        <p>This site is used for check weather<br><br>You can also Check weather by Entre zip/pin code or palce/city
+            name <br><br> Thanks For Visit Our WebSite !!!
+            &#128519; &#128513;&#128513; </p>
     </div>
-    
+
     {{>footer}}
 </body>
+
 </html>

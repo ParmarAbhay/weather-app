@@ -7,7 +7,6 @@ const forecast = require('./forecast')
 const app = express()
 const port = process.env.PORT || 3000
 
-app.use(express.static(path.join(__dirname, '../public/css')))
 app.use(express.static(path.join(__dirname, '../public/imgs')))
 app.use(express.static(path.join(__dirname, '../public/javascript')))
 app.set('views', path.join(__dirname, '../templates/views'))
